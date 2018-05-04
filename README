@@ -1,0 +1,48 @@
+OBS INTE KLAR! #KOMMENTAR TILL OSS SJÄLVA: använd ej vlc använd mplayer
+
+AUTHORS:
+(insert name) was created by Ida Nyblad and Chrisina Ahrén for their bachelor thesis (Load Balancing Workloads Through DRAM Bank Partitioning) at Mälardalens Högskola, Västerås, 2018.
+
+
+NOTES ON WHY TO USE (insert name):
+(insert name) is a controller that uses palloc to partition the main memory/DRAM.
+Itś goal is to ..., to decrese latency created by contention in the main memory.
+(Insert name) is most effectivly used when there is a lot of contention in the main memory, i.e. there is one, or more processes that make a lot of main memory requests/are main memory intensive.
+(insert name) can then be used to ensure speedy execution if a specific process, despite there being other memory intensive processes.
+
+
+HOW TO RUN:
+
+./(insert name) PID
+//eller skulle vi göra bibliotek/funktion? Det skulle vi va?
+
+Run the file and use the process ID (PID) of the process you want not to be effected by other memory intensive processes.
+
+
+REMEMBER
+install cgroup tools: sudo apt install cgroup-tools
+
+
+
+
+WHAT (insert name) WILL DO FOR ME:
+(insert name) will initialise PALLOC and set some standard partions based on the processs ID given as input.
+
+
+
+
+
+MPLAYER: 
+install mplayer: sudo apt install mplayer
+
+get v: mplayer -benchmark -nosound -vo null space.mkv | grep -i 'V:' > FPStest.txt
+
+
+
+
+
+
+
+HOW PALLOC IS INITIALISED:
+The process ID given as input to (insert name) will be given (a partion) of PALLOC DRAM/main memory bins.
+...
